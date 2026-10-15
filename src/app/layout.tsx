@@ -21,7 +21,7 @@ const iaMono = localFont({
 
 export const metadata: Metadata = {
   title: "JEOLAD",
-  description: "JEOLAD - Jesse Oluwapelumi Adesina",
+  description: "Jesse Oluwapelumi Adesina. Engineering Notes & Works.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
