@@ -20,8 +20,12 @@ const iaMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "JEOLAD",
+  title: "Jesse Adesina",
   description: "Jesse Oluwapelumi Adesina. Engineering Notes & Works.",
+  icons: {
+    icon: "/images/cpu.png",
+    apple: "/images/cpu.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
