@@ -26,7 +26,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${iaMono.variable} font-mono antialiased`}>
+    <html
+      lang="en"
+      data-theme="dark"
+      className={`${iaMono.variable} font-mono antialiased`}
+    >
       <body>{children}</body>
     </html>
   );
