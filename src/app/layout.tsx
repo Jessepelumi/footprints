@@ -1,22 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Sen } from "next/font/google";
 import "../styles/globals.css";
 
-const iaMono = localFont({
-  src: [
-    {
-      path: "../../public/fonts/ia-writer-mono-latin-400-normal.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/ia-writer-mono-latin-700-normal.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-ia-mono",
+const sen = Sen({
+  subsets: ["latin"],
   display: "swap",
+  variable: "--font-sen"
 });
 
 export const metadata: Metadata = {
@@ -32,10 +21,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      data-theme="dark"
-      className={`${iaMono.variable} font-mono antialiased`}
+      data-theme="light"
+      className={`${sen.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }
