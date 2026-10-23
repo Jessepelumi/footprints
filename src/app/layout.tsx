@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   title: "Jesse Adesina",
   description: "Jesse Oluwapelumi Adesina. Engineering Notes & Works.",
   icons: {
-    icon: "/images/cpu.png",
-    apple: "/images/cpu.png",
+    icon: "/images/jeolad_illustrated.png",
+    apple: "/images/jeolad_illustrated.png",
   },
 };
 
